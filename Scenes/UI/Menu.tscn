@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=3 uid="uid://wu23g4b2mv12"]
+
+[ext_resource type="Script" uid="uid://wfmhmqbdh0qr" path="res://Scripts/Components/UI/Menu.cs" id="1_tij55"]
+
+[sub_resource type="SystemFont" id="SystemFont_jjiyp"]
+subpixel_positioning = 0
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tij55")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_direction = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0636619, 0.1269775, 0.25792122, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -758.0
+offset_top = 35.0
+offset_right = 758.0
+offset_bottom = 226.0
+grow_horizontal = 2
+
+[node name="Titulo" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_jjiyp")
+theme_override_font_sizes/font_size = 100
+text = "Jogo Com Solid"
+horizontal_alignment = 1
+
+[node name="ContainerButtons" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -802.0
+offset_top = -299.5
+offset_right = 802.0
+offset_bottom = 299.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Buttons" type="VBoxContainer" parent="ContainerButtons"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="ButtonPlay" type="Button" parent="ContainerButtons/Buttons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "Play"
+
+[node name="ButtonQuit" type="Button" parent="ContainerButtons/Buttons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "Sair"
