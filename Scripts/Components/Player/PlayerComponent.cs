@@ -10,7 +10,7 @@ public partial class PlayerComponent : CharacterBody2D
 	public override void _Ready()
 	{
 		GD.Print("Player Carregado!");
-		speed = 300f;
+		speed = 600f;
 		_playerMovementSystem = new PlayerMovementSystem(this, speed);
 	}
 

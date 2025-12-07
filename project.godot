@@ -14,6 +14,10 @@ config/name="projeto-01-godot-4.5.1"
 run/main_scene="uid://wu23g4b2mv12"
 config/features=PackedStringArray("4.5", "C#", "GL Compatibility")
 
+[autoload]
+
+MusicBackgroundScene="*res://Scenes/Music/MusicBackgroundScene.tscn"
+
 [display]
 
 window/size/viewport_width=1920
